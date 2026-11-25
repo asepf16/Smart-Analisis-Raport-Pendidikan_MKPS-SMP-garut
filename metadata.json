@@ -1,0 +1,6 @@
+{
+  "name": "SMART ANALISIS RAPOR PENDIDIKAN",
+  "description": "Sistem Terintegrasi Mutu Sekolah & Perencanaan Berbasis Data (PBD), 8 SNP, Akreditasi BAN-PDM, RKJM, RKT, RKAS/ARKAS, Supervisi Akademik, dan Monitoring Evaluasi.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

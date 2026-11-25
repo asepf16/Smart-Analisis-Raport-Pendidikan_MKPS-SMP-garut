@@ -1,0 +1,1133 @@
+# MASTER PROMPT
+# SMART ANALISIS RAPOR PENDIDIKAN
+## Integrated School Quality & Data-Based Planning System
+
+### A. PERAN DAN IDENTITAS APLIKASI
+
+Bertindaklah sebagai tim ahli yang terdiri atas:
+
+1. Ahli pengembangan sistem informasi pendidikan.
+2. Ahli Perencanaan Berbasis Data (PBD).
+3. Ahli analisis Rapor Pendidikan Indonesia.
+4. Ahli manajemen berbasis sekolah.
+5. Ahli Standar Nasional Pendidikan (SNP).
+6. Ahli akreditasi sekolah/madrasah.
+7. Ahli penyusunan RKJM, RKT, RKAS/ARKAS.
+8. Pengawas sekolah dan kepala sekolah.
+9. Ahli supervisi akademik dan peningkatan mutu pembelajaran.
+10. Senior Full-Stack Developer React, TypeScript, dan AI.
+
+Bangun aplikasi bernama:
+
+**SMART ANALISIS RAPOR PENDIDIKAN**
+
+Tagline:
+"Transformasi Data Menjadi Perencanaan, Program, Anggaran, dan Peningkatan Mutu Sekolah."
+
+Aplikasi ini merupakan sistem digital terintegrasi untuk membantu sekolah melaksanakan Perencanaan Berbasis Data berdasarkan Rapor Pendidikan, menyusun dokumen perencanaan dan penganggaran, mengelola program peningkatan mutu pembelajaran, serta melaksanakan monitoring dan evaluasi.
+
+Aplikasi harus dapat digunakan oleh banyak sekolah dengan akun dan database yang terpisah.
+
+### B. TUJUAN UTAMA APLIKASI
+
+Aplikasi harus mampu:
+
+1. Membaca dan mengolah file Rapor Pendidikan sekolah.
+2. Mengidentifikasi indikator yang perlu ditingkatkan berdasarkan data aktual.
+3. Menganalisis kesenjangan capaian dan tren perkembangan.
+4. Membantu mengidentifikasi masalah prioritas.
+5. Membantu melakukan refleksi dan menemukan akar masalah.
+6. Menghasilkan rekomendasi pembenahan yang relevan.
+7. Mengubah rekomendasi menjadi program dan kegiatan nyata.
+8. Mengintegrasikan hasil PBD ke dalam RKJM, RKT, RKAS/ARKAS.
+9. Mengintegrasikan delapan Standar Nasional Pendidikan.
+10. Mengintegrasikan pemenuhan indikator akreditasi sekolah terbaru.
+11. Menghasilkan program kepala sekolah.
+12. Menghasilkan program supervisi akademik, literasi, numerasi, dan penguatan karakter.
+13. Melakukan monitoring dan evaluasi keterlaksanaan program.
+14. Menyimpan seluruh dokumen dalam arsip digital sekolah.
+
+Prinsip utama:
+
+**SATU DATA → ANALISIS → IDENTIFIKASI → REFLEKSI → BENAHI → PROGRAM → ANGGARAN → IMPLEMENTASI → EVALUASI → PENINGKATAN MUTU.**
+
+### C. SASARAN PENGGUNA DAN JENJANG
+
+Sasaran utama:
+- Sekolah Dasar (SD).
+- Sekolah Menengah Pertama (SMP).
+
+Sistem harus memiliki konfigurasi agar dapat dikembangkan untuk jenjang lain.
+
+Jenis sekolah:
+- Negeri.
+- Swasta.
+
+Satu aplikasi dapat digunakan banyak sekolah. Setiap sekolah memiliki identitas, data, dokumen, anggaran, dan akun pengguna masing-masing.
+
+### D. STRUKTUR MENU UTAMA
+
+Buat sidebar navigasi dengan tujuh kelompok menu utama berikut.
+
+## 1. IKHTISAR UTAMA
+
+Buat dashboard ringkasan yang informatif, interaktif, dan mudah dipahami.
+
+Komponen dashboard:
+
+A. Identitas Sekolah:
+- Nama sekolah.
+- NPSN.
+- Jenjang.
+- Status sekolah.
+- Alamat.
+- Kecamatan.
+- Kabupaten/Kota.
+- Provinsi.
+- Tahun pelajaran.
+- Periode perencanaan.
+
+B. Ringkasan Analisis Mutu:
+- Jumlah indikator yang dianalisis.
+- Indikator capaian baik.
+- Indikator yang perlu ditingkatkan.
+- Indikator prioritas pembenahan.
+- Jumlah masalah yang ditemukan.
+- Jumlah akar masalah.
+- Jumlah rekomendasi pembenahan.
+- Jumlah program yang telah disusun.
+
+C. Ringkasan Perencanaan:
+- Status penyusunan RKJM.
+- Status penyusunan RKT.
+- Status penyusunan RKAS.
+- Jumlah program kepala sekolah.
+- Jumlah program yang sudah dilaksanakan.
+- Jumlah program yang belum dilaksanakan.
+
+D. Ringkasan Anggaran:
+- Total pagu anggaran.
+- Anggaran yang direncanakan.
+- Anggaran yang telah direalisasikan.
+- Sisa anggaran.
+- Persentase realisasi.
+
+E. Ringkasan Mutu Pembelajaran:
+- Status supervisi akademik.
+- Program literasi.
+- Program numerasi.
+- Program penguatan karakter.
+
+F. Visualisasi:
+- Grafik capaian Rapor Pendidikan.
+- Grafik perbandingan capaian antartahun.
+- Grafik indikator prioritas.
+- Grafik realisasi program.
+- Grafik realisasi anggaran.
+- Grafik ketercapaian target mutu.
+
+Dashboard harus mengambil data secara otomatis dari seluruh modul.
+
+Sediakan filter berdasarkan tahun, semester, jenjang, dan periode perencanaan sesuai kebutuhan.
+
+## 2. DATA DAN SUMBER
+
+### 2.1. Input Data Identitas Sekolah
+
+Sediakan formulir identitas sekolah yang mencakup:
+
+- Nama sekolah.
+- NPSN.
+- Jenjang.
+- Status negeri/swasta.
+- Alamat lengkap.
+- Desa/Kelurahan.
+- Kecamatan.
+- Kabupaten/Kota.
+- Provinsi.
+- Kode pos.
+- Nama kepala sekolah.
+- NIP (jika ada).
+- Tahun berdiri.
+- Akreditasi terakhir.
+- Tahun akreditasi.
+- Jumlah peserta didik.
+- Jumlah rombongan belajar.
+- Jumlah guru.
+- Jumlah tenaga kependidikan.
+- Visi sekolah.
+- Misi sekolah.
+- Tujuan sekolah.
+
+Sediakan fasilitas untuk memperbarui identitas sekolah kapan saja.
+
+### 2.2. Input Data Pendukung Sekolah
+
+Sediakan input data pendukung:
+
+- Data peserta didik.
+- Data guru dan tenaga kependidikan.
+- Data sarana dan prasarana.
+- Data kurikulum.
+- Data pembelajaran.
+- Data program sekolah.
+- Data anggaran.
+- Data evaluasi diri sekolah.
+- Data hasil supervisi.
+- Data prestasi sekolah.
+- Data lingkungan dan budaya sekolah.
+
+Data pendukung dapat diisi manual atau diimpor dari Excel.
+
+### 2.3. Fasilitas Impor Rapor Pendidikan
+
+Ini merupakan fitur inti aplikasi.
+
+Sediakan fasilitas unggah file:
+- Excel (.xlsx).
+- Excel (.xls), jika didukung pustaka pembaca.
+- CSV.
+
+Pengguna dapat mengunggah file unduhan Rapor Pendidikan.
+
+Sistem harus:
+
+1. Membaca seluruh worksheet dalam file Excel.
+2. Mendeteksi nama sheet dan struktur tabel.
+3. Mengidentifikasi kolom indikator, capaian, kategori, tahun, perubahan, akar masalah, dan rekomendasi jika tersedia.
+4. Menampilkan preview data sebelum diproses.
+5. Memberikan fasilitas pemetaan kolom apabila format file berbeda.
+6. Menghindari pembacaan data ganda.
+7. Memvalidasi data kosong dan tidak valid.
+8. Menyimpan data asli tanpa mengubah nilai sumber.
+9. Menyimpan tahun data dan tanggal impor.
+10. Menampilkan hasil pembacaan dan laporan kesalahan.
+
+Sediakan riwayat impor agar pengguna dapat membandingkan data antartahun.
+
+PENTING:
+Jangan mengasumsikan seluruh file Rapor Pendidikan mempunyai nama worksheet atau susunan kolom yang sama. Buat mesin pembaca Excel yang adaptif.
+
+Sistem tidak boleh membuat nilai Rapor Pendidikan sendiri jika data tidak tersedia.
+
+## 3. PERENCANAAN BERBASIS DATA (PBD)
+
+Modul ini merupakan pusat kecerdasan aplikasi.
+
+Seluruh proses PBD harus terhubung dengan data Rapor Pendidikan dan data pendukung sekolah.
+
+### 3.1. Analisis Rapor Pendidikan
+
+Sistem harus melakukan analisis otomatis terhadap:
+
+- Seluruh indikator yang tersedia.
+- Dimensi capaian mutu.
+- Nilai capaian.
+- Kategori atau label capaian.
+- Perubahan capaian antartahun.
+- Indikator yang mengalami peningkatan.
+- Indikator yang mengalami penurunan.
+- Indikator yang belum mencapai target.
+- Indikator yang menjadi prioritas pembenahan.
+
+Buat tabel analisis:
+
+| No | Indikator | Capaian | Kategori | Perubahan | Prioritas | Analisis AI |
+|---|---|---|---|---|---|---|
+
+Sediakan grafik dan visualisasi.
+
+AI harus menjelaskan:
+- Kondisi aktual sekolah.
+- Kekuatan sekolah.
+- Kelemahan sekolah.
+- Kesenjangan capaian.
+- Faktor yang perlu mendapat perhatian.
+- Dampak terhadap mutu layanan pendidikan.
+
+Analisis harus berbasis data yang benar-benar diunggah pengguna.
+
+### 3.2. Identifikasi Masalah
+
+AI membantu memilih dan menentukan masalah berdasarkan:
+
+1. Indikator dengan capaian yang perlu ditingkatkan.
+2. Perubahan capaian yang negatif.
+3. Kesenjangan antara kondisi aktual dan target.
+4. Hubungan antardimensi dan indikator.
+5. Data pendukung sekolah.
+6. Tingkat urgensi dan dampak terhadap peserta didik.
+
+Sediakan tabel:
+
+| No | Indikator | Kondisi Aktual | Masalah Utama | Bukti Data | Tingkat Prioritas |
+|---|---|---|---|---|---|
+
+Pengguna dapat:
+- Menyetujui hasil identifikasi AI.
+- Mengedit masalah.
+- Menambah masalah.
+- Menghapus masalah.
+- Mengubah tingkat prioritas.
+
+### 3.3. Refleksi dan Analisis Akar Masalah
+
+AI harus membantu sekolah menemukan akar masalah, bukan hanya mengulang gejala.
+
+Gunakan pendekatan:
+- Refleksi berdasarkan kondisi sekolah.
+- Analisis faktor penyebab.
+- Pendekatan 5 Why.
+- Analisis sebab-akibat.
+- Analisis faktor internal dan eksternal.
+- Analisis sumber daya dan tata kelola.
+
+Setiap akar masalah harus memiliki:
+- Masalah utama.
+- Gejala yang terlihat.
+- Bukti pendukung.
+- Faktor penyebab.
+- Akar masalah.
+- Faktor yang dapat dikendalikan sekolah.
+- Faktor yang membutuhkan dukungan pihak lain.
+
+Sediakan fasilitas pengeditan dan validasi oleh pengguna.
+
+Jangan menyatakan dugaan AI sebagai fakta. Tandai penyebab yang masih memerlukan verifikasi.
+
+### 3.4. Rekomendasi Pembenahan
+
+AI menghasilkan rekomendasi yang relevan dengan akar masalah.
+
+Setiap rekomendasi harus memuat:
+
+- Masalah yang akan dibenahi.
+- Akar masalah.
+- Rekomendasi pembenahan.
+- Tujuan pembenahan.
+- Strategi pelaksanaan.
+- Bentuk kegiatan.
+- Penanggung jawab.
+- Sasaran.
+- Indikator keberhasilan.
+- Target capaian.
+- Waktu pelaksanaan.
+- Kebutuhan sumber daya.
+- Estimasi anggaran.
+- Bukti pelaksanaan.
+
+Rekomendasi harus realistis, terukur, dan sesuai kemampuan sekolah.
+
+Bedakan rekomendasi kegiatan yang memerlukan anggaran dan pembenahan yang dapat dilaksanakan melalui perubahan tata kelola, pembelajaran, budaya, atau kebijakan sekolah.
+
+### 3.5. Implementasi Pembenahan
+
+Ubah rekomendasi yang telah disetujui menjadi rencana aksi.
+
+Buat tabel:
+
+| No | Rencana Aksi | Kegiatan | PIC | Waktu | Indikator | Target | Status |
+|---|---|---|---|---|---|---|---|
+
+Status kegiatan:
+- Belum direncanakan.
+- Direncanakan.
+- Sedang dilaksanakan.
+- Selesai.
+- Perlu tindak lanjut.
+
+Sediakan:
+- Jadwal pelaksanaan.
+- Checklist kegiatan.
+- Dokumentasi.
+- Unggah bukti.
+- Catatan pelaksanaan.
+- Evaluasi hasil.
+- Tindak lanjut.
+
+Semua hasil PBD harus dapat diteruskan secara otomatis ke modul RKJM, RKT, RKAS, dan Program Kepala Sekolah.
+
+## 4. DOKUMEN INDUK DAN ANGGARAN
+
+Modul ini harus mampu menghasilkan dokumen perencanaan sekolah secara terintegrasi.
+
+Prinsipnya, dokumen tidak dibuat secara terpisah, tetapi dihasilkan dari hasil analisis dan rekomendasi PBD.
+
+### 4.1. Integrasi 8 Standar Nasional Pendidikan
+
+Sistem harus memetakan hasil analisis dan program sekolah ke dalam delapan SNP:
+
+1. Standar Kompetensi Lulusan.
+2. Standar Isi.
+3. Standar Proses.
+4. Standar Penilaian Pendidikan.
+5. Standar Tenaga Kependidikan.
+6. Standar Sarana dan Prasarana.
+7. Standar Pengelolaan.
+8. Standar Pembiayaan.
+
+Untuk setiap standar, sediakan:
+
+- Kondisi aktual.
+- Data pendukung.
+- Kesenjangan.
+- Masalah.
+- Akar masalah.
+- Target pemenuhan.
+- Rekomendasi pembenahan.
+- Program.
+- Kegiatan.
+- Indikator keberhasilan.
+- Bukti dukung.
+- Evaluasi.
+
+Sistem harus memperhatikan regulasi SNP yang berlaku dan perubahan standar terbaru.
+
+### 4.2. Integrasi Akreditasi Sekolah
+
+Buat modul pemetaan kesiapan akreditasi berdasarkan panduan dan instrumen resmi BAN-PDM terbaru sesuai jenjang dan jenis satuan pendidikan.
+
+Fitur:
+- Pemetaan indikator akreditasi.
+- Analisis kesenjangan.
+- Identifikasi bukti fisik dan digital.
+- Status pemenuhan.
+- Rekomendasi peningkatan mutu.
+- Daftar dokumen yang harus disiapkan.
+- Progres pemenuhan indikator.
+- Dashboard kesiapan akreditasi.
+
+Hubungkan setiap indikator akreditasi dengan SNP, masalah PBD, program, dan bukti pelaksanaan.
+
+Jangan menganggap delapan SNP sebagai pengganti instrumen akreditasi. Keduanya harus memiliki pemetaan yang saling terhubung tetapi tetap mengikuti kerangka masing-masing.
+
+### 4.3. Generator RKJM
+
+Buat generator Rencana Kerja Jangka Menengah (RKJM).
+
+Pengguna memasukkan:
+- Periode RKJM.
+- Visi dan misi.
+- Tujuan sekolah.
+- Kondisi awal sekolah.
+- Target jangka menengah.
+
+AI mengintegrasikan:
+- Hasil analisis Rapor Pendidikan.
+- Identifikasi masalah.
+- Refleksi akar masalah.
+- Rekomendasi pembenahan.
+- Delapan SNP.
+- Kesiapan akreditasi.
+- Kebutuhan dan potensi sekolah.
+
+Struktur dokumen RKJM:
+
+1. Halaman sampul.
+2. Lembar pengesahan.
+3. Kata pengantar.
+4. Daftar isi.
+5. BAB I Pendahuluan.
+6. BAB II Profil dan Kondisi Sekolah.
+7. BAB III Analisis Kondisi dan Evaluasi Mutu.
+8. BAB IV Identifikasi Masalah dan Akar Masalah.
+9. BAB V Visi, Misi, dan Tujuan Sekolah.
+10. BAB VI Program Strategis Pengembangan Sekolah.
+11. BAB VII Target dan Indikator Keberhasilan.
+12. BAB VIII Rencana Pembiayaan.
+13. BAB IX Monitoring dan Evaluasi.
+14. BAB X Penutup.
+15. Lampiran.
+
+Buat matriks program pengembangan selama periode RKJM.
+
+### 4.4. Generator RKT
+
+Buat generator Rencana Kerja Tahunan.
+
+RKT harus merupakan penjabaran operasional RKJM untuk satu tahun.
+
+AI secara otomatis mengambil:
+- Program strategis RKJM.
+- Prioritas PBD.
+- Target tahunan.
+- Program pemenuhan SNP.
+- Program akreditasi.
+- Program kepala sekolah.
+
+Struktur RKT:
+
+1. Pendahuluan.
+2. Evaluasi program tahun sebelumnya.
+3. Analisis kebutuhan dan prioritas.
+4. Sasaran dan tujuan tahunan.
+5. Program dan kegiatan.
+6. Indikator keberhasilan.
+7. Penanggung jawab.
+8. Jadwal pelaksanaan.
+9. Rencana pembiayaan.
+10. Monitoring dan evaluasi.
+11. Penutup.
+12. Lampiran matriks RKT.
+
+### 4.5. Generator RKAS/ARKAS
+
+Buat generator Rencana Kegiatan dan Anggaran Sekolah yang terintegrasi dengan RKT.
+
+Fitur:
+
+- Mengambil kegiatan dari RKT.
+- Menghubungkan anggaran dengan masalah dan rekomendasi PBD.
+- Mengelompokkan kegiatan berdasarkan program.
+- Memilih sumber dana.
+- Menginput volume dan satuan.
+- Menginput harga satuan.
+- Menghitung total otomatis.
+- Mengelompokkan komponen pembiayaan.
+- Menampilkan total anggaran.
+- Melakukan pemeriksaan kesesuaian terhadap juknis BOSP.
+- Menyediakan laporan alokasi anggaran.
+- Menyediakan rekap per kegiatan dan komponen.
+
+Struktur tabel:
+
+| No | Program | Kegiatan | Komponen | Volume | Satuan | Harga Satuan | Jumlah | Sumber Dana |
+|---|---|---|---|---|---|---|---|---|
+
+AI harus memberikan peringatan apabila:
+- Kegiatan tidak memiliki hubungan dengan kebutuhan sekolah.
+- Anggaran tidak didukung rencana kegiatan.
+- Terjadi penganggaran ganda.
+- Komponen tidak sesuai ketentuan.
+- Melebihi batas penggunaan dana.
+- Harga satuan belum memiliki referensi yang sah.
+
+Sistem wajib mengikuti juknis BOSP yang berlaku untuk tahun anggaran terkait.
+
+Sediakan fasilitas ekspor Excel dan format rekap yang mudah disesuaikan dengan ARKAS.
+
+Jangan mengklaim memiliki integrasi langsung ke ARKAS jika API atau mekanisme integrasi resmi belum tersedia. Sediakan ekspor-impor sebagai alternatif yang aman.
+
+### 4.6. Generator Program Kepala Sekolah
+
+Buat generator Program Kerja Kepala Sekolah yang menyatukan seluruh kebutuhan pengelolaan dan peningkatan mutu sekolah.
+
+Program harus mencakup:
+
+1. Manajerial.
+2. Pengembangan kewirausahaan sesuai ketentuan yang berlaku.
+3. Supervisi kepada guru dan tenaga kependidikan.
+4. Pengembangan mutu pembelajaran.
+5. Penguatan budaya dan karakter sekolah.
+6. Pengembangan sumber daya manusia.
+7. Pengelolaan sarana dan prasarana.
+8. Pengelolaan keuangan dan administrasi.
+9. Kemitraan dengan orang tua dan masyarakat.
+10. Pemenuhan SNP.
+11. Peningkatan kesiapan akreditasi.
+12. Pelaksanaan PBD.
+
+Program harus dihasilkan berdasarkan:
+- Hasil analisis Rapor Pendidikan.
+- Masalah prioritas.
+- Akar masalah.
+- Rekomendasi pembenahan.
+- RKJM.
+- RKT.
+- RKAS.
+- Delapan SNP.
+- Indikator akreditasi.
+
+Setiap program dilengkapi tujuan, sasaran, kegiatan, PIC, jadwal, indikator keberhasilan, anggaran, dan bukti pelaksanaan.
+
+## 5. PROGRAM MUTU PEMBELAJARAN
+
+### 5.1. Program Supervisi Akademik
+
+AI membantu menyusun program supervisi akademik berdasarkan kebutuhan nyata guru dan hasil evaluasi pembelajaran.
+
+Fitur:
+
+- Pemetaan kebutuhan guru.
+- Identifikasi masalah pembelajaran.
+- Program supervisi tahunan.
+- Jadwal supervisi.
+- Instrumen pra-observasi.
+- Instrumen observasi pembelajaran.
+- Instrumen pasca-observasi.
+- Catatan refleksi guru.
+- Rencana tindak lanjut.
+- Coaching dan pembinaan.
+- Monitoring perkembangan guru.
+
+Hasil supervisi harus dapat dihubungkan dengan indikator mutu Rapor Pendidikan dan program peningkatan kompetensi guru.
+
+### 5.2. Program Literasi
+
+AI menyusun program literasi berdasarkan kebutuhan sekolah.
+
+Mencakup:
+- Analisis kebutuhan literasi.
+- Target peningkatan.
+- Program pembiasaan membaca.
+- Pengembangan perpustakaan.
+- Literasi membaca.
+- Literasi digital.
+- Kegiatan pembelajaran berbasis literasi.
+- Pelibatan orang tua.
+- Evaluasi perkembangan literasi.
+
+Setiap program mempunyai indikator dan bukti pelaksanaan.
+
+### 5.3. Program Numerasi
+
+Mencakup:
+- Analisis kemampuan numerasi.
+- Identifikasi kesulitan peserta didik.
+- Penguatan numerasi lintas mata pelajaran.
+- Pembelajaran kontekstual.
+- Pemanfaatan lingkungan sebagai sumber belajar.
+- Pengembangan media numerasi.
+- Asesmen diagnostik dan evaluasi.
+- Tindak lanjut pembelajaran.
+
+### 5.4. Program Penguatan Karakter
+
+Mencakup:
+- Analisis kebutuhan karakter.
+- Pembiasaan positif.
+- Budaya sekolah.
+- Disiplin dan tanggung jawab.
+- Gotong royong.
+- Kemandirian.
+- Integritas.
+- Penguatan nilai-nilai Pancasila.
+- Pencegahan perundungan dan kekerasan.
+- Kemitraan sekolah dan keluarga.
+
+Sesuaikan dengan kebijakan dan kerangka penguatan karakter yang resmi berlaku.
+
+Seluruh program mutu pembelajaran harus memiliki keterkaitan dengan RKT, RKAS, SNP, dan hasil PBD.
+
+## 6. PENGAWASAN DAN ARSIP
+
+### 6.1. Monitoring dan Evaluasi
+
+Buat dashboard monitoring seluruh program sekolah.
+
+Fitur:
+- Monitoring kegiatan.
+- Monitoring target.
+- Monitoring anggaran.
+- Progres program.
+- Realisasi kegiatan.
+- Realisasi anggaran.
+- Unggah bukti pelaksanaan.
+- Catatan kendala.
+- Analisis ketercapaian.
+- Rekomendasi tindak lanjut.
+
+Sediakan indikator status:
+- Belum dimulai.
+- Berjalan.
+- Terlambat.
+- Selesai.
+- Tidak tercapai.
+
+AI harus membantu menganalisis kesenjangan antara rencana dan realisasi.
+
+Buat laporan evaluasi per bulan, semester, dan tahun.
+
+### 6.2. Regulasi dan Referensi
+
+Buat pusat regulasi yang dapat diperbarui.
+
+Kelompokkan regulasi berdasarkan:
+
+1. Kebijakan pendidikan nasional.
+2. Rapor Pendidikan dan PBD.
+3. Standar Nasional Pendidikan.
+4. Kurikulum dan pembelajaran.
+5. Pengelolaan sekolah.
+6. Pengelolaan kepala sekolah.
+7. Supervisi akademik.
+8. Akreditasi sekolah.
+9. BOSP dan ARKAS.
+10. Literasi, numerasi, dan karakter.
+11. Monitoring dan evaluasi.
+
+Setiap regulasi memuat:
+- Nama regulasi.
+- Nomor dan tahun.
+- Instansi penerbit.
+- Tanggal penetapan.
+- Status berlaku.
+- Pokok pengaturan.
+- Hubungan dengan modul aplikasi.
+- Link dokumen resmi.
+- Tanggal terakhir diverifikasi.
+
+Sistem harus mengutamakan sumber resmi:
+- JDIH Kemendikdasmen.
+- JDIH BPK.
+- Situs Kemendikdasmen.
+- Rumah Pendidikan.
+- Pusat Standar dan Kebijakan Pendidikan.
+- BAN-PDM.
+- JDIH instansi terkait.
+
+AI harus memeriksa status regulasi sebelum menggunakannya. Regulasi yang telah dicabut atau diubah tidak boleh disajikan sebagai ketentuan aktif.
+
+Jika status belum dapat diverifikasi, tampilkan label "Perlu Verifikasi".
+
+### 6.3. Dokumen Saya
+
+Sediakan arsip digital seluruh dokumen yang dihasilkan.
+
+Kategori:
+- Dokumen identitas sekolah.
+- Hasil analisis Rapor Pendidikan.
+- Dokumen PBD.
+- RKJM.
+- RKT.
+- RKAS.
+- Program Kepala Sekolah.
+- Program Supervisi.
+- Program Literasi.
+- Program Numerasi.
+- Program Karakter.
+- Laporan Monitoring dan Evaluasi.
+- Dokumen Akreditasi.
+- Dokumen pendukung lainnya.
+
+Fitur:
+- Pencarian dokumen.
+- Filter berdasarkan kategori.
+- Filter berdasarkan tahun.
+- Preview.
+- Edit.
+- Duplikasi.
+- Unduh.
+- Hapus dengan konfirmasi.
+- Riwayat revisi.
+
+Format keluaran:
+- PDF.
+- DOCX.
+- XLSX.
+
+Semua dokumen harus menggunakan identitas sekolah secara otomatis dan memiliki format profesional.
+
+## 7. TATA KELOLA SISTEM
+
+### 7.1. Manajemen Multi-Sekolah
+
+Sistem mendukung banyak sekolah.
+
+Setiap sekolah memiliki:
+- ID sekolah.
+- NPSN.
+- Database terpisah secara logis.
+- Identitas sekolah.
+- Pengguna.
+- Data Rapor Pendidikan.
+- Dokumen.
+- Program.
+- Anggaran.
+- Arsip.
+
+Data satu sekolah tidak boleh dapat diakses oleh sekolah lain tanpa kewenangan.
+
+### 7.2. Hak Akses Pengguna
+
+Sediakan role-based access control:
+
+**Super Admin**
+- Mengelola seluruh sekolah.
+- Mengelola akun.
+- Mengelola regulasi.
+- Mengelola konfigurasi aplikasi.
+- Memantau penggunaan sistem.
+
+**Admin Sekolah**
+- Mengelola identitas sekolah.
+- Mengelola pengguna sekolah.
+- Mengimpor data.
+- Mengelola dokumen dan arsip.
+
+**Kepala Sekolah**
+- Mengakses seluruh modul sekolah.
+- Memvalidasi hasil analisis.
+- Menyetujui program.
+- Memvalidasi RKJM, RKT, RKAS.
+- Memantau pelaksanaan.
+
+**Guru/Tim Pengembang Sekolah**
+- Mengakses data dan modul sesuai penugasan.
+- Membantu analisis.
+- Menyusun program.
+- Mengisi laporan kegiatan.
+- Mengunggah bukti pelaksanaan.
+
+**Bendahara**
+- Mengakses modul anggaran.
+- Menyusun dan memperbarui RKAS.
+- Memantau realisasi anggaran.
+- Menghasilkan laporan keuangan sesuai kewenangan.
+
+Hak akses harus dapat disesuaikan oleh administrator yang berwenang.
+
+### 7.3. Keamanan Sistem
+
+Terapkan:
+- Autentikasi pengguna.
+- Pembatasan akses berdasarkan sekolah.
+- Role-based access control.
+- Validasi data.
+- Audit log.
+- Riwayat aktivitas.
+- Backup data.
+- Proteksi file.
+- Pengelolaan sesi.
+- Konfirmasi sebelum menghapus data.
+
+Jangan menyimpan API key AI di frontend. Gunakan backend atau mekanisme secrets yang aman.
+
+### E. KECERDASAN BUATAN (AI ENGINE)
+
+AI merupakan mesin pendukung utama aplikasi.
+
+Buat AI yang mampu:
+
+1. Membaca data Excel.
+2. Memahami indikator Rapor Pendidikan.
+3. Menganalisis kondisi sekolah.
+4. Menentukan masalah prioritas.
+5. Membantu refleksi akar masalah.
+6. Menghasilkan rekomendasi pembenahan.
+7. Menyusun rencana aksi.
+8. Menghubungkan PBD dengan SNP.
+9. Memetakan indikator akreditasi.
+10. Menghasilkan RKJM.
+11. Menghasilkan RKT.
+12. Menghasilkan RKAS.
+13. Menyusun Program Kepala Sekolah.
+14. Menyusun Program Supervisi.
+15. Menyusun Program Literasi dan Numerasi.
+16. Menyusun Program Penguatan Karakter.
+17. Menganalisis hasil monitoring dan evaluasi.
+18. Menyusun laporan peningkatan mutu.
+
+Sediakan tombol AI:
+- Analisis Otomatis.
+- Identifikasi Masalah.
+- Refleksi Akar Masalah.
+- Rekomendasi Pembenahan.
+- Generate Program.
+- Generate Dokumen.
+- Evaluasi Program.
+- Berikan Saran Perbaikan.
+
+AI harus bekerja berdasarkan data sekolah dan regulasi yang terverifikasi.
+
+AI tidak boleh:
+- Mengarang nilai capaian.
+- Mengarang sumber data.
+- Mengarang regulasi.
+- Mengarang hasil evaluasi.
+- Menganggap semua masalah memiliki penyebab yang sama.
+- Menghasilkan anggaran yang tidak sesuai aturan.
+- Menyatakan dokumen telah resmi disahkan tanpa persetujuan pengguna.
+
+Setiap hasil AI harus dapat diedit, diperiksa, dan disetujui oleh pengguna.
+
+### F. MESIN INTEGRASI ANTARMODUL
+
+Buat satu database relasional yang menghubungkan seluruh modul.
+
+Setiap masalah memiliki ID unik.
+
+Contoh alur:
+
+ID MASALAH → ID AKAR MASALAH → ID REKOMENDASI → ID PROGRAM → ID KEGIATAN → ID ANGGARAN → ID MONITORING → ID EVALUASI.
+
+Ketika pengguna memperbarui suatu masalah atau rekomendasi, sistem harus dapat menunjukkan dokumen dan program mana yang terkait.
+
+Jangan membuat data yang sama berulang kali di modul berbeda.
+
+Terapkan prinsip single source of truth.
+
+Sediakan fasilitas pelacakan hubungan antardokumen.
+
+### G. DESAIN ANTARMUKA (UI/UX)
+
+Gunakan desain modern, profesional, bersih, dan mudah digunakan oleh kepala sekolah serta guru yang tidak memiliki kemampuan teknis.
+
+Konsep desain:
+- Dashboard modern.
+- Sidebar navigasi.
+- Header identitas sekolah.
+- Kartu ringkasan.
+- Grafik interaktif.
+- Tabel yang dapat difilter.
+- Formulir sederhana.
+- Modal konfirmasi.
+- Notifikasi.
+- Progress bar.
+- Breadcrumb.
+- Tampilan responsif.
+
+Palet warna:
+- Hijau tua sebagai warna utama.
+- Hijau muda sebagai warna pendukung.
+- Putih dan abu-abu untuk latar.
+- Emas sebagai aksen seperlunya.
+
+Gunakan ikon yang konsisten.
+
+Pastikan:
+- Desktop optimal.
+- Tablet responsif.
+- Mobile tetap nyaman digunakan.
+- Tidak ada menu yang menghasilkan halaman kosong.
+- Setiap tombol berfungsi.
+- Setiap formulir memiliki validasi.
+- Tampilkan loading ketika AI bekerja.
+- Tampilkan pesan kesalahan yang mudah dipahami.
+
+### H. TEKNOLOGI DAN ARSITEKTUR
+
+Gunakan:
+
+Frontend:
+- React.
+- TypeScript.
+- Vite.
+- Tailwind CSS.
+- Lucide React.
+- Reusable components.
+
+Pengolahan data:
+- SheetJS (xlsx).
+- Pengolahan JSON.
+- Validasi skema.
+- Pengolahan file PDF dan dokumen sesuai kebutuhan.
+
+AI:
+- Google Gemini API melalui backend yang aman.
+- Prompt khusus untuk analisis pendidikan.
+- Structured output JSON untuk hasil analisis.
+- Validasi keluaran AI sebelum disimpan.
+
+Database:
+Gunakan database yang mendukung multi-user dan multi-sekolah, dengan isolasi data antarsekolah.
+
+Pilih arsitektur backend dan database yang sesuai dengan lingkungan Google AI Studio. Jangan menyimpan data utama hanya dalam localStorage.
+
+Jika menggunakan Firebase:
+- Firebase Authentication.
+- Cloud Firestore.
+- Firebase Storage.
+- Security Rules.
+- Cloud Functions atau backend aman untuk pemanggilan AI.
+
+Jika menggunakan layanan database lain, terapkan perlindungan dan isolasi data yang setara.
+
+Buat struktur kode modular, misalnya:
+
+src/
+  components/
+  layouts/
+  pages/
+  modules/
+    dashboard/
+    data-sekolah/
+    impor-rapor/
+    analisis-pbd/
+    rk jm/
+    rkt/
+    rkas/
+    program-kepala-sekolah/
+    supervisi/
+    literasi/
+    numerasi/
+    karakter/
+    monitoring/
+    regulasi/
+    dokumen/
+    pengaturan/
+  services/
+  hooks/
+  types/
+  utils/
+  config/
+
+Sesuaikan nama folder agar valid dan konsisten.
+
+### I. SISTEM PEMBUATAN DOKUMEN
+
+Semua generator dokumen harus menggunakan template profesional.
+
+Persyaratan:
+
+1. Identitas sekolah otomatis.
+2. Kop sekolah dapat dikonfigurasi.
+3. Logo sekolah dapat diunggah.
+4. Penomoran halaman.
+5. Daftar isi.
+6. Tabel dan matriks.
+7. Format tanggal Indonesia.
+8. Ruang tanda tangan.
+9. Nama kepala sekolah.
+10. Lampiran.
+
+Pengguna dapat:
+- Mengedit hasil AI.
+- Menyimpan draf.
+- Melakukan revisi.
+- Memvalidasi dokumen.
+- Mengunduh PDF.
+- Mengunduh Word.
+- Mengunduh Excel.
+
+Setiap dokumen memiliki status:
+Draf → Direvisi → Divalidasi → Disahkan.
+
+Pengesahan hanya dilakukan oleh pejabat berwenang.
+
+### J. STANDAR REGULASI DAN PEMBARUAN KEBIJAKAN
+
+Gunakan regulasi yang berlaku pada tanggal sistem digunakan.
+
+Bangun pusat referensi regulasi yang dapat diperbarui tanpa harus mengubah kode program.
+
+Jadikan sumber resmi sebagai rujukan utama, antara lain:
+
+1. PP Nomor 57 Tahun 2021 tentang Standar Nasional Pendidikan sebagaimana diubah dengan PP Nomor 4 Tahun 2022.
+2. Permendikbudristek Nomor 9 Tahun 2022 tentang Evaluasi Sistem Pendidikan.
+3. Keputusan Kepala BSKAP Nomor 034/H/M/2025 terkait indikator Rapor Pendidikan tahun 2025.
+4. Kepmendikdasmen Nomor 63 Tahun 2026 terkait indikator Rapor Pendidikan.
+5. Surat Edaran Sesjen Kemendikdasmen Nomor 6 Tahun 2026 tentang Optimalisasi Pemanfaatan Rapor Pendidikan.
+6. Permendikdasmen Nomor 8 Tahun 2026 tentang Petunjuk Teknis Pengelolaan Dana BOSP.
+7. Permendikdasmen Nomor 21 Tahun 2025 tentang Standar Tenaga Kependidikan.
+8. Panduan dan instrumen akreditasi BAN-PDM yang berlaku.
+9. Regulasi kurikulum, pembelajaran, asesmen, pengelolaan sekolah, dan kebijakan pendidikan lainnya sesuai status berlakunya.
+
+Daftar tersebut merupakan referensi awal, bukan daftar regulasi yang dianggap sudah lengkap.
+
+AI wajib memeriksa apakah setiap regulasi masih berlaku, telah diubah, dicabut, atau digantikan sebelum menerapkannya.
+
+Jika ada regulasi baru, sediakan fasilitas menambah dan memperbarui referensi.
+
+Jangan mengunci aturan tahun 2025 atau 2026 sebagai aturan permanen untuk semua periode anggaran.
+
+### K. KETENTUAN PENTING PENGEMBANGAN
+
+1. Buat aplikasi yang benar-benar berfungsi, bukan hanya prototype visual.
+2. Semua menu harus terhubung.
+3. Semua tombol harus memiliki fungsi.
+4. Data yang telah diinput harus tersimpan.
+5. Data harus dapat dibuka kembali setelah login.
+6. Data setiap sekolah harus terisolasi.
+7. Analisis harus berdasarkan data aktual.
+8. Hasil AI harus dapat diedit.
+9. Dokumen harus saling terintegrasi.
+10. Anggaran harus menggunakan perhitungan otomatis.
+11. Regulasi harus memiliki status dan sumber.
+12. Sediakan validasi dan penanganan kesalahan.
+13. Hindari data dummy pada sistem produksi.
+14. Jika menggunakan data contoh, berikan label SIMULASI.
+15. Jangan menghilangkan fitur yang sudah berhasil dibangun saat menambahkan fitur baru.
+
+### L. STRATEGI PEMBANGUNAN BERTAHAP
+
+Jangan membangun seluruh aplikasi sekaligus dalam satu proses yang berisiko menghasilkan kode tidak stabil.
+
+Bangun aplikasi secara bertahap dengan pengujian pada setiap tahap.
+
+**TAHAP 1 — Fondasi Aplikasi**
+- Desain UI/UX.
+- Struktur navigasi.
+- Login.
+- Multi-sekolah.
+- Hak akses.
+- Database.
+- Identitas sekolah.
+
+**TAHAP 2 — Data dan Impor Rapor Pendidikan**
+- Form identitas.
+- Input data pendukung.
+- Upload Excel.
+- Pembacaan worksheet.
+- Pemetaan kolom.
+- Validasi.
+- Penyimpanan data.
+
+**TAHAP 3 — Mesin Analisis PBD**
+- Analisis Rapor Pendidikan.
+- Identifikasi masalah.
+- Refleksi akar masalah.
+- Rekomendasi pembenahan.
+- Implementasi rencana aksi.
+
+**TAHAP 4 — Dokumen Induk**
+- Integrasi 8 SNP.
+- Pemetaan akreditasi.
+- Generator RKJM.
+- Generator RKT.
+- Generator RKAS/ARKAS.
+- Program Kepala Sekolah.
+
+**TAHAP 5 — Program Mutu Pembelajaran**
+- Supervisi akademik.
+- Literasi.
+- Numerasi.
+- Penguatan karakter.
+
+**TAHAP 6 — Monitoring dan Arsip**
+- Monitoring dan evaluasi.
+- Regulasi.
+- Dokumen saya.
+- Laporan.
+
+**TAHAP 7 — Penyempurnaan**
+- Dashboard terpadu.
+- Audit log.
+- Keamanan.
+- Backup.
+- Pengujian multi-sekolah.
+- Pengujian ekspor dokumen.
+- Pengujian seluruh fungsi.
+
+### M. INSTRUKSI PELAKSANAAN UNTUK AI DEVELOPER
+
+Mulailah dengan membangun TAHAP 1 terlebih dahulu.
+
+Sebelum menulis kode:
+1. Buat rancangan arsitektur.
+2. Buat struktur database.
+3. Buat rancangan navigasi.
+4. Buat daftar komponen.
+5. Tentukan alur autentikasi dan hak akses.
+6. Tentukan strategi isolasi data antarsekolah.
+
+Setelah itu, implementasikan Tahap 1 sampai benar-benar berfungsi.
+
+Berikan:
+- Kode lengkap.
+- Struktur file.
+- Instruksi pemasangan.
+- Konfigurasi yang diperlukan.
+- Cara pengujian.
+- Kriteria keberhasilan.
+- Daftar fitur yang telah berhasil.
+
+Jangan berpindah ke tahap selanjutnya sebelum tahap sebelumnya berhasil diuji.
+
+Jika ada perubahan kode, berikan file lengkap yang sudah diperbarui, bukan hanya potongan kode yang mengharuskan pengguna mencari dan menggabungkan sendiri.
+
+Utamakan kemudahan penggunaan bagi kepala sekolah dan guru yang tidak memiliki latar belakang pemrograman.
+
+**HASIL AKHIR YANG DIHARAPKAN:**
+
+Sebuah aplikasi profesional bernama SMART ANALISIS RAPOR PENDIDIKAN yang mampu mengubah data Rapor Pendidikan menjadi analisis mutu, prioritas pembenahan, dokumen perencanaan, program kerja, anggaran, pelaksanaan, dan evaluasi secara terintegrasi, akurat, dapat dipertanggungjawabkan, serta sesuai regulasi pendidikan Indonesia yang berlaku.
