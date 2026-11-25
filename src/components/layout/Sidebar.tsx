@@ -161,6 +161,9 @@ export const Sidebar: React.FC<SidebarProps> = ({
           <div className="text-[10px] text-emerald-400 font-medium truncate">
             Sistem Terintegrasi PBD & Mutu
           </div>
+          <div className="text-[10px] text-amber-300 font-semibold tracking-wide truncate mt-0.5">
+            MKPS SMP Kab. Garut
+          </div>
         </div>
       </div>
 

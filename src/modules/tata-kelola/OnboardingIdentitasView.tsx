@@ -111,8 +111,11 @@ export const OnboardingIdentitasView: React.FC<OnboardingIdentitasViewProps> = (
                 <span>Registrasi Pengguna Aplikasi Otomatis</span>
               </div>
               <h1 className="text-xl sm:text-2xl font-bold tracking-tight">
-                SMART ANALISIS RAPOR PENDIDIKAN
+                SMART RAPOR PENDIDIKAN
               </h1>
+              <div className="text-xs sm:text-sm font-semibold text-amber-300">
+                Sistem Terintegrasi PBD &amp; Mutu · MKPS SMP Kab. Garut
+              </div>
               <p className="text-xs sm:text-sm text-slate-200 max-w-2xl leading-relaxed">
                 Lengkapi identitas diri dan satuan pendidikan Anda di bawah ini. Setelah disimpan, Anda otomatis menjadi pengguna aktif aplikasi dan seluruh dokumen PBD, RKJM, RKT, serta RKAS akan terhubung dengan identitas sekolah Anda.
               </p>
